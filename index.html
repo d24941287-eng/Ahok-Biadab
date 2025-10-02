@@ -13,8 +13,7 @@
     <div>
         <img src="php.jpg" class="crot" />
         <button onclick="musik()">
-            <a
-                href="https://www.instagram.com/reel/DNnlnegzc75/?igsh=NmZ6aDJ0bndid2Q4">click
+            <a href="https://www.instagram.com/reel/DNnlnegzc75/?igsh=NmZ6aDJ0bndid2Q4">click
                 to get makanan beracun geratis</a>
         </button>
     </div>
@@ -28,27 +27,27 @@
 
     </div>
 
-    <div class="Azumanga">
-
+    <div>
         <audio id="suara2" src="3.Azumanga omaigah.wav" type="audio/wav"></audio>
-
-        <button id="btnPlay2">affirm yes to get goth girls</button>
-
+        <button id="btn2">Klik to get satu biji prabowo yang disembunyikan pemerintah</button>
     </div>
 
     <script>
         const audio = document.getElementById('suara');
-        // const audio = document.getElementById('suara2');
+        const audio2 = document.getElementById('suara2')
 
         document.getElementById('btnPlay').addEventListener('click', () => {
             audio.currentTime = 0; // mulai dari awal
             audio.play().catch(err => console.error('Gagal memutar:', err));
         });
-        // const audio2 = document.getElementById('suara2');
-        // document.getElementById('btnPlay2').addEventListener('click', () => {
-        //     audio2.currentTime = 0; // mulai dari awal
-        //     audio2.play().catch(err => console.error('Gagal memutar:', err));
-        // });
+
+        document.getElementById('btn2').addEventListener('click', () => {
+            audio.pause();          // stop musik 1 jika sedang main
+            audio.currentTime = 0;
+            audio2.currentTime = 0;
+            audio2.play().catch(err => console.error('Gagal memutar:', err));
+        });
+
     </script>
 </body>
 

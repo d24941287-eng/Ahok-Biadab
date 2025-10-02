@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div>
+        <img src="php.jpg" class="crot" />
+        <button onclick="musik()">
+            <a
+                href="https://www-okezone-com.cdn.ampproject.org/v/s/www.okezone.com/amptag/p-diddy?amp_gsa=1&amp_js_v=a9&usqp=mq331AQIUAKwASCAAgM%3D#amp_tf=Dari%20%251%24s&aoh=17593801819271&referrer=https%3A%2F%2Fwww.google.com&ampshare=https%3A%2F%2Fwww.okezone.com%2Ftag%2Fp-diddy">click
+                and get 500 femboy</a>
+        </button>
+    </div>
+
+    <div class="YAAAAY">
+
+        <audio id="suara" src="3.YAAAAY.wav" type="audio/wav"></audio>
+
+        <button id="btnPlay">affirm yes to get femboy</button>
+
+
+    </div>
+
+    <div class="Azumanga">
+
+        <audio id="suara2" src="3.Azumanga omaigah.wav" type="audio/wav"></audio>
+
+        <button id="btnPlay2">affirm yes to get goth girls</button>
+
+    </div>
+
+    <script>
+        const audio = document.getElementById('suara');
+        // const audio = document.getElementById('suara2');
+
+        document.getElementById('btnPlay').addEventListener('click', () => {
+            audio.currentTime = 0; // mulai dari awal
+            audio.play().catch(err => console.error('Gagal memutar:', err));
+        });
+        // const audio2 = document.getElementById('suara2');
+        // document.getElementById('btnPlay2').addEventListener('click', () => {
+        //     audio2.currentTime = 0; // mulai dari awal
+        //     audio2.play().catch(err => console.error('Gagal memutar:', err));
+        // });
+    </script>
+</body>
+
+</html>
